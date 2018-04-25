@@ -16,10 +16,12 @@
   <!-- NAVBAR -->
   <div class="navbar">
     <div class="nav">
-      <ul>
-        <li class="logo1"> <img src="instagram.png"> </li>
-        <li class="logo2"> <img src="instalike.png"> </li>
-        <li class="recherche"> <input type="text" name="recherche" placeholder="Recherche..."> </li>
+      <ul class="nav-ul">
+        <li class="logo1"> <img class="logo1-img"src="instagram.png"> </li>
+        <li class="logo2"> <img class="logo2-img" src="instalike.png"> </li>
+        <li class="recherche"><input class="recherche-input" type="text" placeholder="Rechercher" name="recherche" value=""> </li>
+
+
       </ul>
     </div>
   </div>
@@ -58,6 +60,9 @@
   <div class="cadrage">
 
 
+
+
+
     <div class="flexbox-container">
       <div class="test"><img data-modal="1" class="js--img" id="imgProfil-1" src="./photo/photo1.jpeg" width="300px" height="250">
              <div class="logo"><i class="fas fa-heart white"></i><i class="fas fa-comment white"></i></div>
@@ -87,7 +92,6 @@
        <div class="test"><img data-modal="6" class="js--img"  id="imgProfil-6" src="./photo/photo6.jpeg" width="300px" height="250">
         <div class="logo"><i class="fas fa-heart white"></i><i class="fas fa-comment white"></i></div>
       </div>
-
   </div>
 
   <div class="flexbox-container">
@@ -160,30 +164,57 @@
         <img id="testons-1" class="imageFenetre" src="./photo/photo1.jpeg" alt="photo" width="650px">
       </div>
 
-      <div class="comment-modal">
 
-        <div class="comment-modal-user">
-          <img src="profil.png" alt="" width="60px;">
-          <span class="modal-name"><a href="#">TravelsWorld</a></span>
-          <span class="modal-abonner"><a href="#">. S'abonner</a></span>
-          <span><button class="fermeFenetre"></button></span>
-        </div>
+        <div class="comment-modal">
 
-        <div class="comment-modal-one">
-          <table>
-            <tr class="row">
-              <td class="col-1"><a href="">Mike</a></td>
-              <td class="col-2">opi iur opirizu pzur zoruizu</td>
-            </tr>
-            <tr class="row">
-              <td class="col-1"><a href="">Sibylle</a></td>
-              <td class="col-2">Trop cool!</td>
-            </tr>
-            <tr class="row">
-              <td class="col-1"><a href="">Gramos</a></td>
-              <td class="col-2">Lourd</td>
-            </tr>
-          </table>
+              <div class="comment-modal-user">
+                <img src="profil.png" alt="" width="60px;">
+                <span class="modal-name"><a href="#">TravelsWorld</a></span>
+                <span class="modal-abonner"><a href="#">. S'abonner</a></span>
+                <span><button class="fermeFenetre"></button></span>
+              </div>
+
+              <div class="comment-modal-one">
+                <div class="tableau">
+                <table class="table1">
+                  <tr class="row">
+                    <td class="col-1"><a href="">Mike</a></td>
+                    <td class="col-2">opi iur opirizu pzur zoruizu</td>
+                  </tr>
+                  <tr class="row">
+                    <td class="col-1"><a href="">Sibylle</a></td>
+                    <td class="col-2">Trop cool!</td>
+                  </tr>
+                  <tr class="row">
+                    <td class="col-1"><a href="">Gramos</a></td>
+                    <td class="col-2">Lourd</td>
+                  </tr>
+                </table>
+              </div>
+              </div>
+
+              <div class="modal-end">
+                        <i class="fas fa-heart modal-icons-1"></i><i class="fas fa-comment modal-icons-2"></i>
+                        <p class="number-likes">
+                          15 like
+                        </p>
+                        <p class="modal-date">
+                          12 Juin 2017
+                        </p>
+                        <div class="addComment">
+                            <input class="newComment-1" type="text"/>
+
+                            <button class="emoji emoji1">&#128515;</button>
+                            <div class="list-emoji1 list-emoji">
+                                  <span class="icone">&#128525;</span>
+                                  <span class="icone">&#128528;</span>
+                                  <span class="icone">&#128520;</span>
+                                  <span class="icone">&#128557;</span>
+                            </div>
+                            <button class="submit1 submit">submit</button>
+                        </div>
+              </div>
+
 
         </div>
 
@@ -202,6 +233,7 @@
 
   </div>
 </div>
+
   <div id="nouvelleFenetre-2" class="modal">
         <div class="modal-content">
                 <div class="image-modal">
@@ -219,7 +251,7 @@
 
                           <div class="comment-modal-one">
                             <div class="tableau">
-                                <table>
+                                <table class="table2">
                                   <tr class="row">
                                     <td class="col-1"><a href="">Sibylle</a></td>
                                     <td class="col-2">lkjfirfjeoitgurourte</td>
@@ -242,15 +274,15 @@
                                   <p class="number-likes">3 like</p>
                                   <p class="modal-date">10 juillet 2017</p>
                                   <div class="addComment">
-                                      <input class="newComment" type="text"/>
-                                      <button class="emoji">&#128515;</button>
-                                      <div class="list-emoji">
+                                      <input class="newComment-2" type="text"/>
+                                      <button class="emoji emoji2">&#128515;</button>
+                                      <div class="list-emoji2 list-emoji">
                                             <span class="icone">&#128525;</span>
                                             <span class="icone">&#128528;</span>
                                             <span class="icone">&#128520;</span>
                                             <span class="icone">&#128557;</span>
                                       </div>
-                                      <button class="submit">submit</button>
+                                      <button class="submit2 submit">submit</button>
                                   </div>
 
                             </div>
@@ -259,11 +291,6 @@
           </div>
     <div class="go-right" onclick="plusSlides(1)"></div>
   </div>
-
-
-
-
-
   <div id="nouvelleFenetre-3" class="modal">
     <div class="modal-content">
 
@@ -282,7 +309,7 @@
 
                   <div class="comment-modal-one">
                       <div class="tableau">
-                          <table>
+                          <table class="table3">
                             <tr class="row">
                               <td class="col-1"><a href="">TravelsWorld</a></td>
                               <td class="col-2">ferijrf</td>
@@ -304,26 +331,21 @@
                       <p class="number-likes">2 like</p>
                       <p class="modal-date">9 juillet 2017</p>
                       <div class="addComment">
-                          <input class="newComment" type="text" placeholder="Comment..."/>
-                          <button class="emoji">&#128515;</button>
-                          <div class="list-emoji">
+                          <input class="newComment-3" type="text" placeholder="Comment..."/>
+                          <button class="emoji emoji3">&#128515;</button>
+                          <div class="list-emoji3 list-emoji">
                                 <span class="icone">&#128525;</span>
                                 <span class="icone">&#128528;</span>
                                 <span class="icone">&#128520;</span>
                                 <span class="icone">&#128557;</span>
                           </div>
-                          <button class="submit">submit</button>
+                          <button class="submit3 submit">submit</button>
                     </div>
                 </div>
 
         </div>
     </div>
   </div>
-
-
-
-
-
   <div id="nouvelleFenetre-4" class="modal">
     <div class="modal-content">
 
@@ -341,7 +363,8 @@
         </div>
 
         <div class="comment-modal-one">
-          <table>
+          <div class="tableau">
+          <table class="table4">
             <tr class="row">
               <td class="col-1"><a href="">Shadd</a></td>
               <td class="col-2">Lol</td>
@@ -355,17 +378,24 @@
               <td class="col-2">pov type</td>
             </tr>
           </table>
+          </div>
         </div>
         <div class="modal-end">
           <i class="fas fa-heart modal-icons-1"></i><i class="fas fa-comment modal-icons-2"></i>
-          <p class="number-likes">
-            0 likes
-          </p>
-          <p class="modal-date">
-            5 juillet 2017
-          </p>
-          <input class="modal-input" type="text" placeholder="Laisser un commentaire" name="" value="">
+          <p class="number-likes">0 likes</p>
+          <p class="modal-date">  5 juillet 2017  </p>
+          <div class="addComment">
+              <input class="newComment-4" type="text" placeholder="Comment..."/>
+              <button class="emoji emoji4">&#128515;</button>
+              <div class="list-emoji4 list-emoji">
+                    <span class="icone">&#128525;</span>
+                    <span class="icone">&#128528;</span>
+                    <span class="icone">&#128520;</span>
+                    <span class="icone">&#128557;</span>
+              </div>
+              <button class="submit4 submit">submit</button>
         </div>
+      </div>
 
       </div>
     </div>
@@ -387,7 +417,8 @@
         </div>
 
         <div class="comment-modal-one">
-          <table>
+          <div class="tableau">
+          <table class="table5">
             <tr class="row">
               <td class="col-1"><a href="">Sibylle</a></td>
               <td class="col-2">iue ourf oiuz yrue fr</td>
@@ -404,18 +435,25 @@
         </div>
         <div class="modal-end">
           <i class="fas fa-heart modal-icons-1"></i><i class="fas fa-comment modal-icons-2"></i>
-          <p class="number-likes">
-            19 likes
-          </p>
-          <p class="modal-date">
-            29 Juin 2017
-          </p>
-          <input class="modal-input" type="text" placeholder="Laisser un commentaire" name="" value="">
+          <p class="number-likes">19 likes</p>
+          <p class="modal-date">29 Juin 2017</p>
+          <div class="addComment">
+              <input class="newComment-5" type="text" placeholder="Comment..."/>
+              <button class="emoji emoji5">&#128515;</button>
+              <div class="list-emoji5 list-emoji">
+                    <span class="icone">&#128525;</span>
+                    <span class="icone">&#128528;</span>
+                    <span class="icone">&#128520;</span>
+                    <span class="icone">&#128557;</span>
+              </div>
+              <button class="submit5 submit">submit</button>
+        </div>
         </div>
 
       </div>
     </div>
   </div>
+</div>
   <div id="nouvelleFenetre-6" class="modal">
     <div class="modal-content">
 
@@ -433,7 +471,8 @@
         </div>
 
         <div class="comment-modal-one">
-          <table>
+          <div class=tableau>
+          <table class="table6">
             <tr class="row">
               <td class="col-1"><a href="">Sibylle</a></td>
               <td class="col-2">poi orug tgu tioyr</td>
@@ -448,16 +487,23 @@
             </tr>
           </table>
         </div>
+        </div>
         <div class="modal-end">
           <i class="fas fa-heart modal-icons-1"></i><i class="fas fa-comment modal-icons-2"></i>
-          <p class="number-likes">
-            15 likes
-          </p>
-          <p class="modal-date">
-            12 Juin 2017
-          </p>
-          <input class="modal-input" type="text" placeholder="Laisser un commentaire" name="" value="">
+          <p class="number-likes">  15 likes  </p>
+          <p class="modal-date">  12 Juin 2017  </p>
+          <div class="addComment">
+              <input class="newComment-6" type="text" placeholder="Comment..."/>
+              <button class="emoji emoji6">&#128515;</button>
+              <div class="list-emoji6 list-emoji">
+                    <span class="icone">&#128525;</span>
+                    <span class="icone">&#128528;</span>
+                    <span class="icone">&#128520;</span>
+                    <span class="icone">&#128557;</span>
+              </div>
+              <button class="submit6 submit">submit</button>
         </div>
+      </div>
 
       </div>
     </div>
@@ -479,7 +525,8 @@
         </div>
 
         <div class="comment-modal-one">
-          <table>
+          <div class="tableau">
+          <table class="table7">
             <tr class="row">
               <td class="col-1"><a href="">Sibylle</a></td>
               <td class="col-2">Ceci est le modal 7</td>
@@ -494,15 +541,25 @@
             </tr>
           </table>
         </div>
+        </div>
         <div class="modal-end">
           <i class="fas fa-heart modal-icons-1"></i><i class="fas fa-comment modal-icons-2"></i>
-          <p class="number-likes">
-            15 likes
-          </p>
+          <p class="number-likes">15 likes  </p>
           <p class="modal-date">
             12 Juin 2017
           </p>
-          <input class="modal-input" type="text" placeholder="Laisser un commentaire" name="" value="">
+
+          <div class="addComment">
+              <input class="newComment-7" type="text" placeholder="Comment..."/>
+              <button class="emoji emoji7">&#128515;</button>
+              <div class="list-emoji7 list-emoji">
+                    <span class="icone">&#128525;</span>
+                    <span class="icone">&#128528;</span>
+                    <span class="icone">&#128520;</span>
+                    <span class="icone">&#128557;</span>
+              </div>
+              <button class="submit7 submit">submit</button>
+        </div>
         </div>
 
       </div>
@@ -525,7 +582,8 @@
         </div>
 
         <div class="comment-modal-one">
-          <table>
+          <div class="tableau">
+          <table class="table8">
             <tr class="row">
               <td class="col-1"><a href="">Sibylle</a></td>
               <td class="col-2">Ceci est le modal 8</td>
@@ -540,6 +598,7 @@
             </tr>
           </table>
         </div>
+        </div>
         <div class="modal-end">
           <i class="fas fa-heart modal-icons-1"></i><i class="fas fa-comment modal-icons-2"></i>
           <p class="number-likes">
@@ -548,8 +607,18 @@
           <p class="modal-date">
             12 Juin 2017
           </p>
-          <input class="modal-input" type="text" placeholder="Laisser un commentaire" name="" value="">
+          <div class="addComment">
+              <input class="newComment-8" type="text" placeholder="Comment..."/>
+              <button class="emoji emoji8">&#128515;</button>
+              <div class="list-emoji8 list-emoji">
+                    <span class="icone">&#128525;</span>
+                    <span class="icone">&#128528;</span>
+                    <span class="icone">&#128520;</span>
+                    <span class="icone">&#128557;</span>
+              </div>
+              <button class="submit8 submit">submit</button>
         </div>
+      </div>
 
       </div>
     </div>
@@ -571,7 +640,8 @@
         </div>
 
         <div class="comment-modal-one">
-          <table>
+          <div class="tableau">
+          <table class="table9">
             <tr class="row">
               <td class="col-1"><a href="">Sibylle</a></td>
               <td class="col-2">Ceci est le modal 9</td>
@@ -586,16 +656,28 @@
             </tr>
           </table>
         </div>
+        </div>
         <div class="modal-end">
-          <i class="fas fa-heart modal-icons-1"></i><i class="fas fa-comment modal-icons-2"></i>
+          <i class="fas fa-heart modal-icons-1 tae"></i><i class="fas fa-comment modal-icons-2"></i>
           <p class="number-likes">
             15 likes
           </p>
           <p class="modal-date">
             12 Juin 2017
           </p>
-          <input class="modal-input" type="text" placeholder="Laisser un commentaire" name="" value="">
+          <div class="addComment">
+              <input class="newComment-9" type="text" placeholder="Comment..."/>
+              <button class="emoji emoji9">&#128515;</button>
+              <div class="list-emoji9 list-emoji">
+                    <span class="icone">&#128525;</span>
+                    <span class="icone">&#128528;</span>
+                    <span class="icone">&#128520;</span>
+                    <span class="icone">&#128557;</span>
+              </div>
+              <button class="submit9 submit">submit</button>
         </div>
+
+      </div>
 
       </div>
     </div>
@@ -617,7 +699,8 @@
         </div>
 
         <div class="comment-modal-one">
-          <table>
+          <div class="tableau">
+          <table class="table10">
             <tr class="row">
               <td class="col-1"><a href="">Sibylle:</a></td>
               <td class="col-2">Ceci est le modal 10</td>
@@ -632,6 +715,7 @@
             </tr>
           </table>
         </div>
+        </div>
         <div class="modal-end">
           <i class="fas fa-heart modal-icons-1"></i><i class="fas fa-comment modal-icons-2"></i>
           <p class="number-likes">
@@ -640,8 +724,18 @@
           <p class="modal-date">
             12 Juin 2017
           </p>
-          <input class="modal-input" type="text" placeholder="Laisser un commentaire" name="" value="">
+          <div class="addComment">
+              <input class="newComment-10" type="text" placeholder="Comment..."/>
+              <button class="emoji emoji10">&#128515;</button>
+              <div class="list-emoji10 list-emoji">
+                    <span class="icone">&#128525;</span>
+                    <span class="icone">&#128528;</span>
+                    <span class="icone">&#128520;</span>
+                    <span class="icone">&#128557;</span>
+              </div>
+              <button class="submit10 submit">submit</button>
         </div>
+      </div>
 
       </div>
     </div>
@@ -663,7 +757,8 @@
         </div>
 
         <div class="comment-modal-one">
-          <table>
+          <div class="tableau">
+          <table class="table11">
             <tr class="row">
               <td class="col-1"><a href="">Sibylle:</a></td>
               <td class="col-2">Ceci est le modal 11</td>
@@ -678,6 +773,7 @@
             </tr>
           </table>
         </div>
+        </div>
         <div class="modal-end">
           <i class="fas fa-heart modal-icons-1"></i><i class="fas fa-comment modal-icons-2"></i>
           <p class="number-likes">
@@ -686,8 +782,17 @@
           <p class="modal-date">
             12 Juin 2017
           </p>
-          <input class="modal-input" type="text" placeholder="Laisser un commentaire" name="" value="">
-        </div>
+          <div class="addComment">
+              <input class="newComment-11" type="text" placeholder="Comment..."/>
+              <button class="emoji emoji11">&#128515;</button>
+              <div class="list-emoji11 list-emoji">
+                    <span class="icone">&#128525;</span>
+                    <span class="icone">&#128528;</span>
+                    <span class="icone">&#128520;</span>
+                    <span class="icone">&#128557;</span>
+              </div>
+              <button class="submit11 submit">submit</button>
+        </div>        </div>
 
       </div>
     </div>
@@ -709,7 +814,8 @@
         </div>
 
         <div class="comment-modal-one">
-          <table>
+          <div class="tableau">
+          <table class="table12">
             <tr class="row">
               <td class="col-1"><a href="">Sibylle:</a></td>
               <td class="col-2">Ceci est le modal 12</td>
@@ -724,6 +830,7 @@
             </tr>
           </table>
         </div>
+        </div>
         <div class="modal-end">
           <i class="fas fa-heart modal-icons-1"></i><i class="fas fa-comment modal-icons-2"></i>
           <p class="number-likes">
@@ -732,8 +839,17 @@
           <p class="modal-date">
             12 Juin 2017
           </p>
-          <input class="modal-input" type="text" placeholder="Laisser un commentaire" name="" value="">
-        </div>
+          <div class="addComment">
+              <input class="newComment-12" type="text" placeholder="Comment..."/>
+              <button class="emoji emoji12">&#128515;</button>
+              <div class="list-emoji12 list-emoji">
+                    <span class="icone">&#128525;</span>
+                    <span class="icone">&#128528;</span>
+                    <span class="icone">&#128520;</span>
+                    <span class="icone">&#128557;</span>
+              </div>
+              <button class="submit12 submit">submit</button>
+        </div>        </div>
 
       </div>
     </div>
@@ -755,7 +871,8 @@
         </div>
 
         <div class="comment-modal-one">
-          <table>
+          <div class="tableau">
+          <table class="table13">
             <tr class="row">
               <td class="col-1"><a href="">Sibylle:</a></td>
               <td class="col-2">Ceci est le modal 13</td>
@@ -770,6 +887,7 @@
             </tr>
           </table>
         </div>
+        </div>
         <div class="modal-end">
           <i class="fas fa-heart modal-icons-1"></i><i class="fas fa-comment modal-icons-2"></i>
           <p class="number-likes">
@@ -778,8 +896,18 @@
           <p class="modal-date">
             12 Juin 2017
           </p>
-          <input class="modal-input" type="text" placeholder="Laisser un commentaire" name="" value="">
+          <div class="addComment">
+              <input class="newComment-13" type="text" placeholder="Comment..."/>
+              <button class="emoji emoji13">&#128515;</button>
+              <div class="list-emoji13 list-emoji">
+                    <span class="icone">&#128525;</span>
+                    <span class="icone">&#128528;</span>
+                    <span class="icone">&#128520;</span>
+                    <span class="icone">&#128557;</span>
+              </div>
+              <button class="submit13 submit">submit</button>
         </div>
+      </div>
 
       </div>
     </div>
@@ -801,7 +929,8 @@
         </div>
 
         <div class="comment-modal-one">
-          <table>
+          <div class="tableau">
+          <table class="table14">
             <tr class="row">
               <td class="col-1"><a href="">Sibylle:</a></td>
               <td class="col-2">Ceci est le modal 14</td>
@@ -816,6 +945,7 @@
             </tr>
           </table>
         </div>
+        </div>
         <div class="modal-end">
           <i class="fas fa-heart modal-icons-1"></i><i class="fas fa-comment modal-icons-2"></i>
           <p class="number-likes">
@@ -824,8 +954,18 @@
           <p class="modal-date">
             12 Juin 2017
           </p>
-          <input class="modal-input" type="text" placeholder="Laisser un commentaire" name="" value="">
+          <div class="addComment">
+              <input class="newComment-14" type="text" placeholder="Comment..."/>
+              <button class="emoji emoji14">&#128515;</button>
+              <div class="list-emoji14 list-emoji">
+                    <span class="icone">&#128525;</span>
+                    <span class="icone">&#128528;</span>
+                    <span class="icone">&#128520;</span>
+                    <span class="icone">&#128557;</span>
+              </div>
+              <button class="submit14 submit">submit</button>
         </div>
+      </div>
 
       </div>
     </div>
@@ -847,7 +987,8 @@
         </div>
 
         <div class="comment-modal-one">
-          <table>
+          <div class="tableau">
+          <table class="table15">
             <tr class="row">
               <td class="col-1"><a href="">Sibylle:</a></td>
               <td class="col-2">Ceci est le modal 15</td>
@@ -862,6 +1003,7 @@
             </tr>
           </table>
         </div>
+        </div>
         <div class="modal-end">
           <i class="fas fa-heart modal-icons-1"></i><i class="fas fa-comment modal-icons-2"></i>
           <p class="number-likes">
@@ -870,8 +1012,18 @@
           <p class="modal-date">
             12 Juin 2017
           </p>
-          <input class="modal-input" type="text" placeholder="Laisser un commentaire" name="" value="">
+          <div class="addComment">
+              <input class="newComment-15" type="text" placeholder="Comment..."/>
+              <button class="emoji emoji15">&#128515;</button>
+              <div class="list-emoji15 list-emoji">
+                    <span class="icone">&#128525;</span>
+                    <span class="icone">&#128528;</span>
+                    <span class="icone">&#128520;</span>
+                    <span class="icone">&#128557;</span>
+              </div>
+              <button class="submit15 submit">submit</button>
         </div>
+      </div>
 
       </div>
     </div>
