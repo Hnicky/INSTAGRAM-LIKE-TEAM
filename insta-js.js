@@ -157,3 +157,53 @@ var tableau = document.querySelector(".tableau");
 var newComment = document.querySelector(".newComment");
 var submit = document.querySelector(".submit");
 var table = document.querySelector("table");
+
+
+
+// Nicky S'ABONNER
+// S'ABONNER INTERFACE
+const abonnement = document.getElementById("sub");
+const followers = document.getElementById("followers");
+let currentFollowers = 100 ;
+let t = 0;
+followers.innerHTML = currentFollowers + " abonné(e)"
+
+abonnement.addEventListener("click", function(){
+  if(t == 0){
+    abonnement.style.color = "black";
+    abonnement.style.backgroundColor = "#fafafa";
+    abonnement.innerHTML = "Abonné(e)";
+    followers.innerHTML = currentFollowers +1 + " abonné(e)";
+    t = 1;
+  }
+  else{
+    abonnement.style.color = "white";
+    abonnement.style.backgroundColor = "#3897f0";
+    abonnement.innerHTML = "S'abonner"
+    followers.innerHTML = currentFollowers + " abonné(e)";
+    t = 0;
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
