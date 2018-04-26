@@ -479,6 +479,9 @@ tr {
   font-size:13px
 }
 
+
+
+
 .list-emoji{
   position:absolute;
   top:-32px;
@@ -515,7 +518,9 @@ tr {
 
 
 .size{
-  font-size:23px;}
+  font-size:23px;
+margin-right: 10px;
+}
 
 .modal-icons-1 {
   font-size: 20px;
@@ -542,6 +547,11 @@ tr {
   margin-top: 5px;
   margin-bottom:0px;
   font-size: 15px;
+}
+
+
+.number-likes span{
+  margin-right: 5px;
 }
 
 .modal-date {
@@ -581,4 +591,8 @@ input:focus {
 
 .btn-icon {
   cursor: pointer;
+}
+
+input{
+padding-left: 10px;
 }
