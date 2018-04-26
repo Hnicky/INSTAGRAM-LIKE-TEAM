@@ -164,6 +164,7 @@ var table = document.querySelector("table");
 // S'ABONNER INTERFACE
 const abonnement = document.getElementById("sub");
 const followers = document.getElementById("followers");
+const modalab =document.getElementsByClassName('.modal-abonner');
 let currentFollowers = 100 ;
 let t = 0;
 followers.innerHTML = currentFollowers + " abonné(e)"
@@ -174,6 +175,7 @@ abonnement.addEventListener("click", function(){
     abonnement.style.backgroundColor = "#fafafa";
     abonnement.innerHTML = "Abonné(e)";
     followers.innerHTML = currentFollowers +1 + " abonné(e)";
+    modalab.innerHTML="Abonné(e)";
     t = 1;
   }
   else{
@@ -181,10 +183,36 @@ abonnement.addEventListener("click", function(){
     abonnement.style.backgroundColor = "#3897f0";
     abonnement.innerHTML = "S'abonner"
     followers.innerHTML = currentFollowers + " abonné(e)";
+    modalab.innerHTML="S'abonner";
     t = 0;
   }
 })
 
+let u = 0;
+modalab.addEventListener("click",function(){
+  if(u == 0){
+    abonnement.style.color = "black";
+    abonnement.style.backgroundColor = "#fafafa";
+    abonnement.innerHTML = "Abonné(e)";
+    followers.innerHTML = currentFollowers +1 + " abonné(e)";
+    modalab.innerHTML="Abonné(e)";
+    u = 1;
+  }
+  else{
+    abonnement.style.color = "white";
+    abonnement.style.backgroundColor = "#3897f0";
+    abonnement.innerHTML = "S'abonner"
+    followers.innerHTML = currentFollowers + " abonné(e)";
+    modalab.innerHTML="S'abonner";
+    u = 0;
+  }
+
+
+
+
+
+
+})
 
 
 
